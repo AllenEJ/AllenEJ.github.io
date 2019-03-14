@@ -1,0 +1,75 @@
+/* All text between these is commented out and is not part of the CSS code */
+
+/*background of main page*/
+html{
+    background-color: darkslategray;
+}
+
+/*defines size and colour of central strip where main content is*/
+body{
+    background-color: #E7F3EF;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+/*format of main font and indentation on page*/
+h1, h2, p{
+    color:#093426;
+    font-family: helvetica;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*formatting of font used in links and removal of underline on links*/
+a{
+    font-family: helvetica;
+    text-decoration: none;
+    font-weight:bold;
+    color:#83D8BD;
+}
+
+/* ul is the unordered list used for the navigation. This code turns into a grid display as a horizontal menu and takes away the default bullet points. the 'fr' are width measurements and define proportions of the parent element. 5 x 1fr are 5 equal widths.It also ensures that it covers the full width of the main body of the page*/
+ul
+{
+    padding:0; 
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    width:100%;
+}
+
+/*formats the individual list items in the menu*/
+li{  
+    background-color: cadetblue;
+    text-align: center;
+    box-sizing: content-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* changes the colour of the menu box when hovered over*/
+li:hover{
+    background-color: darkturquoise;  
+}
+
+/*formats the grid which the back and next buttons are in and displays them equally spaced in two equal (1fr) columns across the width of the body of the page*/
+div{ display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 20%;
+    width 100%;
+    text-align: center;
+}
+
+/*formats the back and next buttons*/
+.button{
+    padding:10px;
+    background-color: cadetblue;
+    font-size: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    width:60%;
+
+}
+/*changes colour of button on hover*/
+.button:hover{
+    background-color: #23483C;
+}
